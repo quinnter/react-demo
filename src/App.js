@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import KeyIdeas from './KeyIdeas'
+import LifeCycle from './LifeCycle'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="BoxContainer">
+        {/* <div className="LeftBox"></div> */}
+        <KeyIdeas/>
+        <div className="MiddleBox">
+          <text className="FancyTitle">Lauras Wonderful Fantastic Super Amazing React Knowledge Share</text> 
+        </div>
+        {/* <div className="RightBox"></div> */}
+        <LifeCycle/>
+      </div>
+      <div className="BoxContainer">
+        <KeyIdeas title={'One'}/>
+        <KeyIdeas title={'Two'}/>
+        <KeyIdeas title={'Three'}/>
+      </div>
     </div>
   );
 }

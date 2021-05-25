@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f0b8e831;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(147, 9, 62);
 }
 
 .App-link {
@@ -35,4 +35,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.BoxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: rgb(52, 2, 33);
+  min-height: 100vh;
+}
+
+
+.LeftBox {
+  box-shadow: rgba(240, 46, 170, 0.4) -10px 10px, rgba(240, 46, 170, 0.3) -15px 15px, rgba(240, 46, 170, 0.2) -20px 20px, rgba(240, 46, 170, 0.1) -25px 25px, rgba(240, 46, 170, 0.05) -30px 30px;
+  width: 25vw;
+  height: 80vh;
+  border-radius: 10px;
+  background-color: #f0b8e831;
+}
+
+.MiddleBox {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 10px, rgba(240, 46, 170, 0.3) 0px 15px, rgba(240, 46, 170, 0.2) 0px 20px, rgba(240, 46, 170, 0.1) 0px 25px, rgba(240, 46, 170, 0.05) 0px 30px;
+  width: 25vw;
+  height: 80vh;
+  border-radius: 10px;
+  background-color: #f0b8e831;
+}
+
+.RightBox {
+  box-shadow: rgba(240, 46, 170, 0.4) 10px 10px, rgba(240, 46, 170, 0.3) 15px 15px, rgba(240, 46, 170, 0.2) 20px 20px, rgba(240, 46, 170, 0.1) 25px 25px, rgba(240, 46, 170, 0.05) 30px 30px;
+  width: 25vw;
+  height: 80vh;
+  border-radius: 10px;
+  background-color: #f0b8e831;
+}
+
+.Title {
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  color: rgb(220, 4, 141);
+  padding: 2em;
+}
+
+.InnerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(4px + 2vmin);
+  color: rgb(52, 2, 33);
+  margin: 1em;
+  text-align: left;
+}
+
+.FancyTitle {
+  font-size: calc(10px + 4vmin);
+  font-weight: bold;
+  color: rgb(220, 4, 141);
+  padding: 2em;
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
